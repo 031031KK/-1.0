@@ -1,0 +1,141 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: mm ll---0310315, mike, LIC=ZB4EI-TF18I-2Z0W4-F1GLP-Y5SIT-BJT3B
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.36.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      Segger\JL2CM3.dll V2.99.40.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+F:\嵌入式操作系统三级项目\FreeRTOS_3LevelPJ\MDK-ARM\FreeRTOS_3LevelPJ.uvprojx
+Project File Date:  11/29/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'FreeRTOS_3LevelPJ'
+assembling startup_stm32f103xb.s...
+compiling OLED.c...
+oled.h(54): warning:  #1-D: last line of file ends without a newline
+  #endif  
+../Core/Inc/OLED_Font.h(206): warning:  #1-D: last line of file ends without a newline
+  #endif
+OLED.c(30): error:  #20: identifier "OLED_SCL_GPIO_Port" is undefined
+  	OLED_SCLK_Set() ;
+OLED.c(30): error:  #20: identifier "OLED_SCL_Pin" is undefined
+  	OLED_SCLK_Set() ;
+OLED.c(31): error:  #20: identifier "OLED_SDA_GPIO_Port" is undefined
+  	OLED_SDIN_Set();
+OLED.c(31): error:  #20: identifier "OLED_SDA_Pin" is undefined
+  	OLED_SDIN_Set();
+OLED.c(41): error:  #20: identifier "OLED_SCL_GPIO_Port" is undefined
+  	OLED_SCLK_Set() ;
+OLED.c(41): error:  #20: identifier "OLED_SCL_Pin" is undefined
+  	OLED_SCLK_Set() ;
+OLED.c(43): error:  #20: identifier "OLED_SDA_GPIO_Port" is undefined
+  	OLED_SDIN_Clr();
+OLED.c(43): error:  #20: identifier "OLED_SDA_Pin" is undefined
+  	OLED_SDIN_Clr();
+OLED.c(66): error:  #20: identifier "OLED_SCL_GPIO_Port" is undefined
+  	OLED_SCLK_Set() ;
+OLED.c(66): error:  #20: identifier "OLED_SCL_Pin" is undefined
+  	OLED_SCLK_Set() ;
+OLED.c(78): error:  #20: identifier "OLED_SCL_GPIO_Port" is undefined
+  	OLED_SCLK_Clr();
+OLED.c(78): error:  #20: identifier "OLED_SCL_Pin" is undefined
+  	OLED_SCLK_Clr();
+OLED.c(85): error:  #20: identifier "OLED_SDA_GPIO_Port" is undefined
+  		{OLED_SDIN_Set();}
+OLED.c(85): error:  #20: identifier "OLED_SDA_Pin" is undefined
+  		{OLED_SDIN_Set();}
+OLED.c(86): error:  #20: identifier "OLED_SDA_GPIO_Port" is undefined
+  		else OLED_SDIN_Clr();
+OLED.c(86): error:  #20: identifier "OLED_SDA_Pin" is undefined
+  		else OLED_SDIN_Clr();
+OLED.c(289): error:  #20: identifier "Hzk" is undefined
+  		OLED_WR_Byte(Hzk[2*no][t],OLED_DATA);
+OLED.c(295): error:  #20: identifier "Hzk" is undefined
+  		OLED_WR_Byte(Hzk[2*no+1][t],OLED_DATA);
+OLED.c(421): warning:  #1-D: last line of file ends without a newline
+  // }
+OLED.c: 3 warnings, 18 errors
+compiling usart.c...
+compiling tim.c...
+compiling stm32f1xx_it.c...
+compiling stm32f1xx_hal_adc_ex.c...
+compiling stm32f1xx_hal_timebase_tim.c...
+compiling gpio.c...
+compiling stm32f1xx_hal_gpio_ex.c...
+compiling key.c...
+compiling adc.c...
+compiling stm32f1xx_hal_msp.c...
+compiling stm32f1xx_hal.c...
+compiling stm32f1xx_hal_adc.c...
+compiling main.c...
+compiling seg.c...
+compiling freertos.c...
+compiling croutine.c...
+compiling list.c...
+compiling event_groups.c...
+compiling stream_buffer.c...
+compiling queue.c...
+compiling tasks.c...
+compiling timers.c...
+compiling heap_4.c...
+compiling cmsis_os.c...
+compiling stm32f1xx_hal_rcc.c...
+compiling port.c...
+compiling stm32f1xx_hal_uart.c...
+compiling system_stm32f1xx.c...
+compiling stm32f1xx_hal_rcc_ex.c...
+compiling stm32f1xx_hal_flash_ex.c...
+compiling stm32f1xx_hal_exti.c...
+compiling stm32f1xx_hal_pwr.c...
+compiling stm32f1xx_hal_gpio.c...
+compiling stm32f1xx_hal_cortex.c...
+compiling stm32f1xx_hal_flash.c...
+compiling stm32f1xx_hal_dma.c...
+compiling stm32f1xx_hal_tim_ex.c...
+compiling stm32f1xx_hal_tim.c...
+"FreeRTOS_3LevelPJ\FreeRTOS_3LevelPJ.axf" - 18 Error(s), 3 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil.STM32F1xx_DFP.2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_FreeRTOS_3LevelPJ
+  C:\Users\ll---031031\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include
+  C:\Users\ll---031031\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+      Include file:  CMSIS\Core\Include\tz_context.h
+Target not created.
+Build Time Elapsed:  00:00:06
+</pre>
+</body>
+</html>
